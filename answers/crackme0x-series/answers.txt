@@ -5,13 +5,7 @@ Password: "250382"
 This one is found simply by one of two ways:
 1. By searching for string references, one of which is a 6 digit code "250382"
 
-2. On instruction 40138A and 401391, the success message "Password OK :)" is printed.
-Using x32dbg we can see that this instruction is jumped to by a je comparison on instruction 40137A. This 
-follows a strcmp call and test of the eax register on instructions 401373 and 401378. Looking at the strcmp
-documentation, strcmp returns 0 if the values of the string are the same. One of these parameters that strcmp
-compares is clearly user input and the other is the string "250382" loaded on instruction 401368 proving
-that the code must be the loaded string. So, the flow of this program after scanf is called is as follows:
-
+2. These instructions:
 // Compares the user input that was previously collected to the password string
 00401365 | lea eax,dword ptr ss:[ebp-18]
 00401368 | mov dword ptr ss:[esp+4],crackme0x00.404027
