@@ -85,4 +85,4 @@ if (local_8 == 0x52b24) {
 }
 ```
 
-The password is equivalent to 0x52b24 or "338724"
+So, the password is equivalent to 0x52b24 or "338724"
