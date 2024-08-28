@@ -1,4 +1,4 @@
-##crackme0x00.exe : using x32dbg "https://github.com/x64dbg/x64dbg"
+## crackme0x00.exe : using x32dbg "https://github.com/x64dbg/x64dbg"
 execs/crackme0x00.exe
 Password: "250382"
 
@@ -33,7 +33,7 @@ otherwise:
 ```
 
 
-##crackme0x01.exe : using x32dbg "https://github.com/x64dbg/x64dbg"
+## crackme0x01.exe : using x32dbg "https://github.com/x64dbg/x64dbg"
 execs/crackme0x01.exe
 Password: 0x149A -> "5274"
 
@@ -50,7 +50,7 @@ Basically, this checks the user input against a (clearly hexadecimal) value 0x14
 0d5274. If this comparison succeeds, "Password OK :)\n" is printed, and if not "Invalid Password!\n" is
 printed.
 
-##crackme0x02.exe : using ghidra "https://github.com/NationalSecurityAgency/ghidra"
+## crackme0x02.exe : using ghidra "https://github.com/NationalSecurityAgency/ghidra"
 execs/crackme0x02.exe
 
 Password: 0x52b24 -> "338724"
